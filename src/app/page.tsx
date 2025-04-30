@@ -1,14 +1,15 @@
 "use client"
-import About from "@/Sections/About";
-import Contact from "@/Sections/Contact";
-import Hero from "@/Sections/Hero";
-import Projects from "@/Sections/Projects";
-import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
-import { useEffect, useState } from "react";
+import { ThemeProvider } from '@/Context/ThemeContext';
+import About from '@/Sections/About';
+import Contact from '@/Sections/Contact';
+import Hero from '@/Sections/Hero';
+import Projects from '@/Sections/Projects';
+import Footer from '@/components/Footer/Footer';
+import NavBar from '@/components/NavBar/NavBar';
+import React, { useState, useEffect } from 'react';
 
 
-export default function Home() {
+function Page() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -32,17 +33,19 @@ export default function Home() {
   }
 
   return (
-
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
-      <NavBar />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+        <NavBar />
+        <main>
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
+
+export default Page;

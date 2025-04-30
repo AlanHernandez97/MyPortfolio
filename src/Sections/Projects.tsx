@@ -1,75 +1,79 @@
+"use client"
 import React, { useState } from 'react';
 import SectionTitle from '../components/SectionTitle/SectionTitle';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 import { ProjectType } from '../types';
+import Link from 'next/link';
 
 const Projects = () => {
-	const [filter, setFilter] = useState<string>('all');
+	const [filter, setFilter] = useState<string>('Todo');
 
 	const projects: ProjectType[] = [
 		{
 			id: 1,
-			title: 'E-commerce Platform',
-			description: 'A full-featured e-commerce platform with product catalog, cart, and checkout functionality.',
-			image: 'https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-			tags: ['Next.js', 'Tailwind CSS', 'MongoDB'],
-			category: 'fullstack',
-			githubUrl: 'https://github.com',
-			liveUrl: 'https://example.com',
+			title: 'Renoshop',
+			description: 'Una plataforma de e-commerce dedicada a la venta a mayoreo y menudeo de articulos personalizados (No se puede ver el proyecto en GitHub ya que es privado)',
+			image: '/img/RenoShop.png',
+			tags: ['Next.js', 'Tailwind CSS', 'MongoDB', 'NestJS'],
+			category: 'Fullstack',
+			githubUrl: 'https://github.com/Reno-MX/monoreno',
+			liveUrl: 'https://renoshop.mx/es',
 		},
 		{
 			id: 2,
-			title: 'Task Management App',
-			description: 'A productivity app allowing users to create, organize and track tasks with real-time updates.',
-			image: 'https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-			tags: ['React', 'Node.js', 'PostgreSQL'],
-			category: 'backend',
-			githubUrl: 'https://github.com',
+			title: 'Banks',
+			description: 'Una aplicación que consume un API de bancos y regresa diversa información',
+			image: '/img/Banks.png',
+			tags: ['NextJS', 'Tailwind CSS'],
+			category: 'Frontend',
+			githubUrl: 'https://github.com/AlanHernandez97/Banks',
 			liveUrl: 'https://example.com',
 		},
 		{
 			id: 3,
-			title: 'Travel Blog',
-			description: 'A responsive travel blog with dynamic content management system and image optimization.',
-			image: 'https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-			tags: ['Next.js', 'Tailwind CSS', 'MySQL'],
-			category: 'frontend',
-			githubUrl: 'https://github.com',
+			title: 'DentisCare',
+			description: 'Landing page para un consultorio dentista, esta enfocado en la versión web y móvil',
+			image: '/img/DentistCare.png',
+			tags: ['NextJS', 'Tailwind CSS'],
+			category: 'Frontend',
+			githubUrl: 'https://github.com/AlanHernandez97/DentistCare',
 			liveUrl: 'https://example.com',
 		},
-		{
-			id: 4,
-			title: 'Real-time Chat Application',
-			description: 'A messaging platform with real-time communication, user authentication, and message history.',
-			image: 'https://images.pexels.com/photos/4126743/pexels-photo-4126743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-			tags: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-			category: 'fullstack',
-			githubUrl: 'https://github.com',
-			liveUrl: 'https://example.com',
-		},
-		{
-			id: 5,
-			title: 'Fitness Tracker',
-			description: 'An app to track workouts, nutrition, and progress with visualizations and goal setting.',
-			image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-			tags: ['React', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
-			category: 'fullstack',
-			githubUrl: 'https://github.com',
-			liveUrl: 'https://example.com',
-		},
-		{
-			id: 6,
-			title: 'Weather Dashboard',
-			description: 'A weather visualization app displaying current conditions and forecasts with interactive maps.',
-			image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-			tags: ['React', 'Tailwind CSS', 'API Integration'],
-			category: 'frontend',
-			githubUrl: 'https://github.com',
-			liveUrl: 'https://example.com',
-		},
+		// {
+		// 	id: 4,
+		// 	title: 'Travel Blog',
+		// 	description: 'A responsive travel blog with dynamic content management system and image optimization.',
+		// 	image: 'https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+		// 	tags: ['Next.js', 'Tailwind CSS', 'MySQL'],
+		// 	category: 'Frontend',
+		// 	githubUrl: 'https://github.com',
+		// 	liveUrl: 'https://example.com',
+		// },
+		// {
+		// 	id: 5,
+		// 	title: 'Fitness Tracker',
+		// 	description: 'An app to track workouts, nutrition, and progress with visualizations and goal setting.',
+		// 	image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+		// 	tags: ['React', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
+		// 	category: 'Fullstack',
+		// 	githubUrl: 'https://github.com',
+		// 	liveUrl: 'https://example.com',
+		// },
+		// {
+		// 	id: 6,
+		// 	title: 'Weather Dashboard',
+		// 	description: 'A weather visualization app displaying current conditions and forecasts with interactive maps.',
+		// 	image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+		// 	tags: ['React', 'Tailwind CSS', 'API Integration'],
+		// 	category: 'Frontend',
+		// 	githubUrl: 'https://github.com',
+		// 	liveUrl: 'https://example.com',
+		// },
 	];
 
-	const filteredProjects = filter === 'all'
+	const cates = projects.map(project => project.category)
+
+	const filteredProjects = filter === 'Todo'
 		? projects
 		: projects.filter(project => project.category === filter);
 
@@ -98,21 +102,30 @@ const Projects = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{filteredProjects.map((project) => (
-						<ProjectCard key={project.id} project={project} />
-					))}
-				</div>
+				{
+					!filteredProjects || filteredProjects.length === 0 ? (
+						<div className='w-full text-center p-10'>
+							<span className='text-2xl text-gray-400'>Sin Proyectos</span>
+						</div>
+					) : (
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+							{filteredProjects.map((project) => (
+								<ProjectCard key={project.id} project={project} />
+							))}
+						</div>
+					)
+
+				}
 
 				<div className="text-center mt-12">
-					<a
-						href="https://github.com"
+					<Link
+						href="https://github.com/AlanHernandez97"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="inline-flex items-center px-6 py-3 border border-indigo-600 dark:border-teal-500 text-indigo-600 dark:text-teal-500 font-medium rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-700 transition-colors duration-300"
 					>
 						Ver más en GitHub
-					</a>
+					</Link>
 				</div>
 			</div>
 		</section>

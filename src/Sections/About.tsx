@@ -28,16 +28,17 @@ const About = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 					<div className="order-2 md:order-1">
 						<h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white transition-colors duration-300">
-							Desarrollador Front-End ubicado en México
+							Ingeniero en Desarrollo de Software
 						</h3>
 						<p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
-							Soy Alan Eduardo López Hernández, un apasionado desarrollador web Full Stack con experiencia en la creación de aplicaciones modernas y responsivas utilizando tecnologías de vanguardia.
-							Mi camino en el desarrollo web comenzó hace 6 años, y desde entonces he estado completamente enganchado.
+							Soy Alan Eduardo López Hernández, un apasionado ingeniero en desarrollo de software con enfoque en el desarrollo web, con experiencia en la creación de aplicaciones modernas y responsivas utilizando tecnologías de vanguardia.
+							Mi camino en el desarrollo web comenzó hace 2 años, y desde entonces he estado completamente enganchado.
 						</p>
 						<p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
 							Estoy especializado en crear experiencias de usuario fluidas con React y Next.js en el frontend,
 							mientras desarrollo sistemas backend robustos y escalables con Node.js y diversas tecnologías de bases de datos.
 							Me apasiona especialmente escribir código limpio y eficiente, y mantenerme al día con las últimas tendencias de la industria.
+							Soy egresado de la Universidad Autónoma de Chiapas
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-8">

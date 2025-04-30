@@ -13,13 +13,13 @@ const Footer = () => {
 							&lt;Alan.dev /&gt;
 						</h3>
 						<p className="text-gray-600 dark:text-gray-400">
-							Full Stack Developer specializing in modern web technologies
+							Desarrollador web front-end especializado en tecnologías web modernas
 						</p>
 					</div>
 
 					<div className="flex space-x-4">
 						<a
-							href="https://github.com"
+							href="https://github.com/AlanHernandez97"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-teal-900 transition-colors duration-300"
@@ -28,7 +28,7 @@ const Footer = () => {
 							<Github size={20} />
 						</a>
 						<a
-							href="https://linkedin.com"
+							href="https://www.linkedin.com/in/alaneduardolopezhernandez/"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-teal-900 transition-colors duration-300"
@@ -36,7 +36,7 @@ const Footer = () => {
 						>
 							<Linkedin size={20} />
 						</a>
-						<a
+						{/* <a
 							href="https://twitter.com"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Footer = () => {
 							aria-label="Twitter"
 						>
 							<Twitter size={20} />
-						</a>
+						</a> */}
 						<a
 							href="mailto:alan@example.com"
 							className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-teal-900 transition-colors duration-300"
@@ -57,7 +57,7 @@ const Footer = () => {
 
 				<div className="border-t border-gray-300 dark:border-gray-700 mt-8 pt-8 text-center">
 					<p className="text-gray-600 dark:text-gray-400">
-						&copy; {year} Alan Eduardo Lopez Hernandez. All rights reserved.
+						&copy; {year} Alan Eduardo Lopez Hernandez. Todos los derechois reservados.
 					</p>
 				</div>
 			</div>

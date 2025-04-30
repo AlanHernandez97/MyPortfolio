@@ -1,4 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
 	const scrollToAbout = () => {
@@ -22,7 +23,7 @@ const Hero = () => {
 			<div className="container mx-auto relative z-10">
 				<div className="flex flex-col md:flex-row items-center">
 					<div className="md:w-1/2 md:pr-12 mb-12 md:mb-0">
-						<p className="text-indigo-600 dark:text-teal-400 font-medium mb-4 opacity-0 animate-[fadeInUp_0.7s_0.3s_forwards]">Hello, I'm</p>
+						<p className="text-indigo-600 dark:text-teal-400 font-medium mb-4 opacity-0 animate-[fadeInUp_0.7s_0.3s_forwards]">Hola, yo soy</p>
 						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white opacity-0 animate-[fadeInUp_0.7s_0.6s_forwards]">
 							Alan Eduardo <br />
 							<span className="text-indigo-700 dark:text-teal-400">López Hernández</span>
@@ -55,26 +56,26 @@ const Hero = () => {
 						</div>
 
 						<div className="flex space-x-4 opacity-0 animate-[fadeInUp_0.7s_1.5s_forwards]">
-							<a
-								href="https://github.com"
+							<Link
+								href="https://github.com/AlanHernandez97"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="p-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-teal-400 transition-colors duration-300"
 								aria-label="GitHub"
 							>
 								<Github size={24} />
-							</a>
-							<a
-								href="https://linkedin.com"
+							</Link>
+							<Link
+								href="https://www.linkedin.com/in/alaneduardolopezhernandez/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="p-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-teal-400 transition-colors duration-300"
 								aria-label="LinkedIn"
 							>
 								<Linkedin size={24} />
-							</a>
+							</Link>
 							<a
-								href="mailto:alan@example.com"
+								href="mailto:alanhernandez9716@gmail.com"
 								className="p-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-teal-400 transition-colors duration-300"
 								aria-label="Email"
 							>
@@ -89,7 +90,7 @@ const Hero = () => {
 							<div className="relative bg-gradient-to-tl from-indigo-700 to-teal-500 p-1 rounded-full">
 								<div className="bg-white dark:bg-gray-900 rounded-full">
 									<img
-										src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+										src="/img/IMG_5571.JPG"
 										alt="Alan Eduardo Lopez Hernandez"
 										className="rounded-full w-full aspect-square object-cover"
 									/>

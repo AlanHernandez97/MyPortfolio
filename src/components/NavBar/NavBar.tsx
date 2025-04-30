@@ -1,9 +1,8 @@
-"use client"
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/Context/ThemeContext';
-import { Menu, Moon, Sun, X } from 'lucide-react';
-import React, { useEffect, useState } from 'react'
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 	const { theme, toggleTheme } = useTheme();
@@ -200,6 +199,6 @@ const NavBar = () => {
 			</div>
 		</header>
 	);
-}
+};
 
-export default NavBar
+export default NavBar;
