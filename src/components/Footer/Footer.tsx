@@ -1,5 +1,4 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
 	const year = new Date().getFullYear();
@@ -57,7 +56,7 @@ const Footer = () => {
 
 				<div className="border-t border-gray-300 dark:border-gray-700 mt-8 pt-8 text-center">
 					<p className="text-gray-600 dark:text-gray-400">
-						&copy; {year} Alan Eduardo Lopez Hernandez. Todos los derechois reservados.
+						&copy; {year} Alan Eduardo Lopez Hernandez. Todos los derechos reservados.
 					</p>
 				</div>
 			</div>

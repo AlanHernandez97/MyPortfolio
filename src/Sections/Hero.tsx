@@ -29,7 +29,7 @@ const Hero = () => {
 							<span className="text-indigo-700 dark:text-teal-400">López Hernández</span>
 						</h1>
 						<p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-xl opacity-0 animate-[fadeInUp_0.7s_0.9s_forwards]">
-							Un desarrollador Front-End apasionado, especializado en crear experiencias digitales excepcionales con tecnologías web modernas.
+							Ingeniero en desarrollo de software especializado en crear aplicaciones web modernas y responsivas.
 						</p>
 
 						<div className="flex space-x-4 mb-8 opacity-0 animate-[fadeInUp_0.7s_1.2s_forwards]">

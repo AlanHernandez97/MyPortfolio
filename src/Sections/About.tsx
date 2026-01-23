@@ -31,14 +31,13 @@ const About = () => {
 							Ingeniero en Desarrollo de Software
 						</h3>
 						<p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
-							Soy Alan Eduardo López Hernández, un apasionado ingeniero en desarrollo de software con enfoque en el desarrollo web, con experiencia en la creación de aplicaciones modernas y responsivas utilizando tecnologías de vanguardia.
-							Mi camino en el desarrollo web comenzó hace 2 años, y desde entonces he estado completamente enganchado.
+							Soy Alan Eduardo López Hernández, ingeniero en desarrollo de software con enfoque en desarrollo web.
+							Cuento con más de 3 años de experiencia creando aplicaciones modernas y responsivas utilizando tecnologías actuales.
 						</p>
 						<p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
-							Estoy especializado en crear experiencias de usuario fluidas con React y Next.js en el frontend,
-							mientras desarrollo sistemas backend robustos y escalables con Node.js y diversas tecnologías de bases de datos.
-							Me apasiona especialmente escribir código limpio y eficiente, y mantenerme al día con las últimas tendencias de la industria.
-							Soy egresado de la Universidad Autónoma de Chiapas
+							Me especializo en el frontend con React y Next.js, desarrollando interfaces intuitivas y experiencias de usuario fluidas, así como en la construcción de backends robustos y escalables con Node.js y diferentes tecnologías de bases de datos.
+							Me apasiona escribir código limpio, eficiente y mantenible, además de mantenerme en constante aprendizaje para estar al día con las tendencias de la industria.
+							Soy egresado de la Universidad Autónoma de Chiapas.
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-8">
@@ -52,7 +51,7 @@ const About = () => {
 							<div>
 								<h4 className="font-bold text-indigo-600 dark:text-teal-400 mb-2 transition-colors duration-300">Experiencia</h4>
 								<p className="text-gray-700 dark:text-gray-300 transition-colors duration-300">
-									1+ año<br />
+									2+ años<br />
 									Desarrollador Front-End
 								</p>
 							</div>
