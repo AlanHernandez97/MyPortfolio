@@ -34,7 +34,7 @@ const Projects = () => {
 			title: 'DentisCare',
 			description: 'Landing page para un consultorio dentista, esta enfocado en la versión web y móvil',
 			image: '/img/DentistCare.png',
-			tags: ['NextJS', 'Tailwind CSS'],
+			tags: ['ReactJS', 'Tailwind CSS'],
 			category: 'Frontend',
 			githubUrl: 'https://github.com/AlanHernandez97/DentistCare',
 			liveUrl: 'https://calm-beignet-2a33be.netlify.app/',
@@ -44,10 +44,20 @@ const Projects = () => {
 			title: 'IMC Calculator',
 			description: 'Una aplicación de cálculo de IMC responsiva con un diseño limpio, que permite a los usuarios calcular fácilmente su Índice de Masa Corporal y comprender su estado de salud.',
 			image: '/img/IMC-Calculator.png',
-			tags: ['Next.js', 'Tailwind CSS'],
+			tags: ['ReactJS', 'Tailwind CSS'],
 			category: 'Frontend',
 			githubUrl: 'https://github.com/AlanHernandez97/IMC-Calculator',
 			liveUrl: 'https://boisterous-piroshki-8ec051.netlify.app/',
+		},
+		{
+			id: 5,
+			title: 'Todo App',
+			description: 'Una aplicación de lista de tareas responsiva con un diseño limpio, que permite a los usuarios agregar, editar y eliminar tareas para organizar su día a día.',
+			image: '/img/DragonBallWiki.png',
+			tags: ['ReactJS', 'Tailwind CSS', 'Swagger'],
+			category: 'Frontend',
+			githubUrl: 'https://github.com/AlanHernandez97/DragonBall-Wiki',
+			liveUrl: 'https://lustrous-palmier-7f4e5d.netlify.app/',
 		},
 		// {
 		// 	id: 5,
@@ -70,8 +80,6 @@ const Projects = () => {
 		// 	liveUrl: 'https://example.com',
 		// },
 	];
-
-	const cates = projects.map(project => project.category)
 
 	const filteredProjects = filter === 'Todo'
 		? projects
